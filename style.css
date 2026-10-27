@@ -35,3 +35,17 @@ p {
     border: 1px solid #eeeeee;
     background-color: white;
 }
+#size-button {
+    background-color: #3882f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#size-button:hover {
+    background-color: #2563eb;
+}

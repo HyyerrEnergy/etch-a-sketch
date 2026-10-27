@@ -19,3 +19,25 @@ function createGrid(size) {
 }
 
 createGrid(16);
+const sizeButton = document.querySelector("#size-button");
+
+sizeButton.addEventListener("click", () => {
+    const input = prompt("Enter a grid size between 1 and 100:");
+
+    if (input === null) {
+        return;
+    }
+
+    const newSize = Number(input);
+
+    if (
+        !Number.isInteger(newSize) ||
+        newSize < 1 ||
+        newSize > 100
+    ) {
+        alert("Please enter a whole number between 1 and 100.");
+        return;
+    }
+
+    createGrid(newSize);
+});
